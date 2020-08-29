@@ -1,0 +1,128 @@
+body, html{
+  height:100%;
+  margin:0;
+  font-size:16px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight:400;
+  line-height:1.8em;
+
+  color:#666;
+}
+
+.pimg1, .pimg2, .pimg3{
+  position:relative;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+
+  /*
+    fixed = parallax
+    scroll = normal
+  */
+  background-attachment: fixed;
+}
+
+.pimg1{
+  background-image:url('../img/Gracias.jpg');
+  background-size: cover;
+  min-height:100%;
+}
+
+.pimg2{
+  background-image:url('../img/Silva_Gran-canaria.jpg');
+  min-height:400px;
+  opacity: 0.6;
+}
+
+.pimg3{
+  background-image:url('../img/Silva_Spain.jpg');
+  min-height:400px;
+  opacity: 0.6;
+}
+
+.section{
+  text-align:center;
+  padding:50px 80px;
+}
+
+.section-light{
+  background-color:#f4f4f4;
+  color:#666;
+  margin: 0;
+}
+
+.section-dark{
+  background-color:#282e34;
+  color:#ddd;
+}
+
+.ptext{
+  position:absolute;
+  top:50%;
+  width:100%;
+  text-align:center;
+  color:#000;
+  font-family: 'Parisienne', cursive;
+  font-size:100px;
+  letter-spacing:8px;
+  /* text-transform:uppercase; */
+}
+
+.ptext .border{
+  background-color:#111;
+  color: #f4f4f4;
+  padding:20px;
+}
+
+.ptext .border.trans{
+  background-color:transparent;
+}
+
+.column {
+  float: left;
+  width: 30%;
+  padding: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (min-width: 1300px) {
+  .column {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .column {
+    width: 100%;
+  }
+}
+
+@media(max-width:568px) {
+  .pimg1, .pimg2, .pimg3 {
+    background-attachment:scroll;
+  }
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  /* border-width: 3px; */
+}
+
+th {
+  border-bottom: 2px solid #ddd;
+}
+td {
+  padding: 10px;
+  /* border-left: thin solid #ddd; */
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+  background-color: grey;
+}
