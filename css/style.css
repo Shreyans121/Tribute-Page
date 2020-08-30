@@ -127,3 +127,17 @@ td {
 tr:hover {
   background-color: grey;
 }
+
+button {
+  width: 150px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #6caddf;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+}
+button:hover {
+  background: #366e99;
+}
